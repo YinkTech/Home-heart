@@ -1,0 +1,12 @@
+.nav-logo {
+  width: 50px;
+}
+
+.nav-color {
+  color: #15295c;
+}
+
+.nav-link:active {
+  font-weight: bolder;
+  color: #15295c;
+}
