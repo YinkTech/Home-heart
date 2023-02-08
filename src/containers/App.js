@@ -46,7 +46,7 @@ function App() {
               <img src={slider2} className="d-block sliders" alt="slider1" />
               <div className="slider-caption carousel-caption d-none d-md-block">
                 <h5 className="text-warning fs-1">We are provide your dream home.</h5>
-                <p className="text-white">Residential real estate may contain either a single 'amity or multifamily structure that is available for occupation or for non-business available purposes.</p>
+                <p className="text-white">Residential real estate may contain either a single &apos;amity or multifamily structure that is available for occupation or for non-business available purposes.</p>
               </div>
             </div>
 

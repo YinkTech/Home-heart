@@ -60,7 +60,7 @@ const Details = () => {
                             Book now and immerse yourself in the comfort and serenity of our fully-furnished house.
                             With spacious rooms, stunning views, and all the amenities you need,
                             this is the perfect escape from the hustle and bustle of daily life.
-                              Don't miss out on this incredible opportunity to relax and rejuvenate.
+                              Don&apos;t miss out on this incredible opportunity to relax and rejuvenate.
                               Reserve your stay today!
                           </small>
                         </div>

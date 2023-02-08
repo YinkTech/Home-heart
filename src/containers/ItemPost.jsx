@@ -44,7 +44,7 @@ const ItemPost = () => {
 
               <div className="input-group mb-5">
                   <div className="input-group-prepend">
-                    <div className="input-group-text auth-btn"><i class="bi bi-house-add"></i></div>
+                    <div className="input-group-text auth-btn"><i className="bi bi-house-add"></i></div>
                   </div>
                   <input
                     type="text"
@@ -58,7 +58,7 @@ const ItemPost = () => {
 
               <div className="input-group mb-5">
                   <div className="input-group-prepend">
-                    <div className="input-group-text auth-btn"><i class="bi bi-suit-diamond"></i></div>
+                    <div className="input-group-text auth-btn"><i className="bi bi-suit-diamond"></i></div>
                   </div>
                   <textarea
                     type="text"
@@ -72,7 +72,7 @@ const ItemPost = () => {
 
               <div className="input-group mb-5">
                   <div className="input-group-prepend">
-                    <div className="input-group-text auth-btn"><i class="bi bi-geo-alt"></i></div>
+                    <div className="input-group-text auth-btn"><i className="bi bi-geo-alt"></i></div>
                   </div>
                   <input
                     type="text"
@@ -86,7 +86,7 @@ const ItemPost = () => {
 
               <div className="input-group mb-5">
                   <div className="input-group-prepend">
-                    <div className="input-group-text auth-btn"><i class="bi bi-tags"></i></div>
+                    <div className="input-group-text auth-btn"><i className="bi bi-tags"></i></div>
                   </div>
                   <input
                     type="text"
@@ -100,7 +100,7 @@ const ItemPost = () => {
 
               <div className="input-group mb-5">
                   <div className="input-group-prepend">
-                    <div className="input-group-text auth-btn"><i class="bi bi-file-image"></i></div>
+                    <div className="input-group-text auth-btn"><i className="bi bi-file-image"></i></div>
                   </div>
                   <input
                     type="text"

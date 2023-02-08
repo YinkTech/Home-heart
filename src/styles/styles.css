@@ -14,7 +14,6 @@
   border-radius: 10px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #3ab1c16a; 
 }
@@ -165,7 +164,6 @@
 }
 
 .submit-btn {
-  /* width: fill-available; */
   width: -webkit-fill-available;
 }
 
@@ -195,8 +193,5 @@
 @media screen and (max-width: 400px) {
   .list-item {
     width: 250px;
-  }
-  
+  }  
 }
-
-

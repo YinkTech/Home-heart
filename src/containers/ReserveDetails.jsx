@@ -18,7 +18,7 @@ const ReserveDetails = () => {
 
   useEffect(() => {
     fetchReservation();
-  }, []);
+  }, [fetchReservation]);
   
   return (
     <div>
