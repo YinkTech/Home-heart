@@ -5,6 +5,7 @@ import { Provider } from 'react-redux'
 import { BrowserRouter } from 'react-router-dom'
 import SwitchRoutes from './containers/SwitchRoutes';
 import store from './redux/store/index';
+import './styles/index.css'
 import './styles/navbar.css'
 import './styles/styles.css'
 

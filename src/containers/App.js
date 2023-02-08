@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "./../components/NavBar";
 import slider1 from './../img/slider-2.jpg';
 import slider2 from './../img/slider-3.jpg';
 import slider3 from './../img/slider-4.jpg';
@@ -22,11 +21,10 @@ import Flogo from './../img/logo.png';
 import { Link } from "react-router-dom";
 
 
+
 function App() {
   return (
-    <div>
-      <NavBar />
-
+    <div>    
       <div id="carouselExampleDark" className="carousel d-none d-md-block carousel-light slide" data-bs-ride="carousel">
          
           <div className="carousel-indicators">
@@ -56,8 +54,8 @@ function App() {
               <img src={slider3} className="d-block sliders" alt="slider1" />
               
               <div className="slider-caption carousel-caption d-none d-md-block set-color">
-                <h5 className="text-warning fs-1">Third slide label</h5>
-                <p className="text-white">Some representative placeholder content for the third slide.</p>
+                <h5 className="text-warning fs-1">Beautiful investments.</h5>
+                <p className="text-white">Smartest Way To Find Your Home.</p>
               </div>
 
           </div>
@@ -159,7 +157,7 @@ function App() {
             <small className="text-secondary fw-bold p-0"> Get your dream place that poppuler now </small>
           </div>
           <div>
-            <button className="btn btn-outline-info">View All</button>
+            <Link to={`/properties`} className="btn btn-outline-info">View All</Link>
           </div>
           </div>
 
@@ -238,10 +236,10 @@ function App() {
       </div>
 
       <div className="fifth-sec py-sm-4 d-flex flex-md-row flex-column align-content-center justify-content-around">
-        <a href='https://www.dropbox.com/' target='_blank' ><img src={dropbox} alt="companies-logo" className="img-fluid companies-logo" /></a>
-        <a href='https://www.airbnb.com/' target='_blank'><img src={air} alt="companies-logo" className="img-fluid companies-logo" /></a>
-        <a href='https://asana.com/' target='_blank'><img src={asana} alt="companies-logo" className="img-fluid companies-logo" /></a>
-        <a href='https://mailchimp.com/en-gb/' target='_blank'><img src={mailchimp} alt="companies-logo" className="img-fluid companies-logo" /></a>
+        <a href='https://www.dropbox.com/' target='_blank' rel="noreferrer"><img src={dropbox} alt="companies-logo" className="img-fluid companies-logo" /></a>
+        <a href='https://www.airbnb.com/' target='_blank' rel="noreferrer"><img src={air} alt="companies-logo" className="img-fluid companies-logo" /></a>
+        <a href='https://asana.com/' target='_blank' rel="noreferrer"><img src={asana} alt="companies-logo" className="img-fluid companies-logo" /></a>
+        <a href='https://mailchimp.com/en-gb/' target='_blank' rel="noreferrer"><img src={mailchimp} alt="companies-logo" className="img-fluid companies-logo" /></a>
       </div>
 
       <footer className="footer">
@@ -283,9 +281,9 @@ function App() {
             <h4>Contact Us</h4>
             <ul className=" list-unstyled  text-capitalize">
               <li>
-                <div class="input-group mb-4">
-                  <input type="text" class="form-control" placeholder="Enter Your Email" aria-label="Enter Your Email" aria-describedby="button-addon2" />
-                  <button class="btn btn-outline-primary" type="button" id="button-addon2">Button</button>
+                <div className="input-group mb-4">
+                  <input type="text" className="form-control" placeholder="Enter Your Email" aria-label="Enter Your Email" aria-describedby="button-addon2" />
+                  <button className="btn btn-outline-primary" type="button" id="button-addon2">Button</button>
                 </div>
               </li>
               <li className="d-flex justify-content-around">
