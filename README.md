@@ -13,7 +13,7 @@
 ## Home-heart Details Page
 ![screenshot](./src/img/readme/details.png)
 
-### Project Requirements
+## Project Requirements
 
 - You should follow the layout of the provided design. You should change only the titles, descriptions, and photos - to create a website about something other than motorcycles.
 - Select a theme for your website - is it going to be a website for booking doctor appointments, booking online classes, or something else?
@@ -44,7 +44,7 @@
 - Redux
 - HTML & CSS
 
-### To get a local copy run the following steps:
+## To get a local copy run the following steps:
 
 - Copy this link `https://github.com/YinkTech/Home-heart.git`
 - Open your terminal or command line
@@ -59,7 +59,7 @@
 
 In the project directory, you can run:
 
-### `npm start`
+## `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:5000](http://localhost:5000) to view it in your browser.
