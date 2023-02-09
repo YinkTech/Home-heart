@@ -10,7 +10,7 @@ const NavBar = () => {
     if (logged === 'true' ) {
       return (
         <div className='d-lg-flex' >
-          <Link to={`/home-heart`} className='text-info nav-link fs-5 fw-bold'  > Home </Link>
+          <Link to={`/Home-heart`} className='text-info nav-link fs-5 fw-bold'  > Home </Link>
           <Link to={`/properties`} className='text-info nav-link nav-color fs-5 fw-bold'> Properties </Link>
           <Link to={`/reserve`} className='text-info nav-link fs-5 fw-bold me-md-5'> Bookings </Link>
         </div>
@@ -24,7 +24,7 @@ const NavBar = () => {
       <nav className="navbar p-0 navbar-expand-lg navbar-light ">
         <div className="container-fluid ">
 
-          <Link to={`/home-heart`} className='navbar-brand mx-5'> <img src={icon} alt='Logo' className='img-fluid nav-logo' /> </Link>
+          <Link to={`/Home-heart`} className='navbar-brand mx-5'> <img src={icon} alt='Logo' className='img-fluid nav-logo' /> </Link>
 
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>

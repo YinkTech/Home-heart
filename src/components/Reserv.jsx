@@ -24,7 +24,6 @@ const currentUser = setUser.username;
       return (
           <div className="shadow text-start p-2 py-3 m-2 rounded-3 item-list" key={id}>
                 <div className=" text-capitalize">
-                    <h5 className="my-2 fw-bolder">{user}</h5>
 
                     <p className="text-secondary">{house}</p>
 
@@ -41,6 +40,7 @@ const currentUser = setUser.username;
     })
   return (
     <><Link className='text-decoration-none m-3 d-block text-info' style={{color: '#000'}} to={`/properties`}> <i className="bi bi-backspace fs-3"></i></Link> 
+    <h3 className='text-center'>All Reservations</h3>
      <div className='mx-auto text-center'>{renderReserve}</div>
     </>
   )

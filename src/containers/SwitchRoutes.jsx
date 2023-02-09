@@ -21,7 +21,7 @@ const SwitchRoutes = () => {
 
         <Route path='/signup' element={<Signup />}  />
 
-        <Route path='/home-heart' element={<App />} />
+        <Route path='/Home-heart' element={<App />} />
 
         <Route path='/properties' element={<Properties />} />
 

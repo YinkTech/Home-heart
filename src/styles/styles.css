@@ -166,7 +166,7 @@
 }
 
 .submit-btn {
-  width: -webkit-fill-available;
+  width: 100%;
 }
 
 .delete-list {
@@ -178,7 +178,7 @@
 }
 
 .section-del {
-  width: -webkit-fill-available;
+  width: 100%;
 }
 
 @media screen and (max-width: 770px) {
