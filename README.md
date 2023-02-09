@@ -20,11 +20,11 @@
 # Core features - for teams of each size
 - The user logs in to the website, only by typing the username (a properly authenticated login is a requirement if your group is made of 5 people).
 - In the navigation panel, the user can see links to:
-- Motorcycles/doctors/classes/items that you selected as a theme.
-- "Reserve" form.
-- "My reservations".
-- "Add motorcycle/doctor/class/item that you selected as a theme" (if you are in a group of 4 people the link is visible to everybody).
-- "Delete motorcycle/doctor/class/item that you selected as a theme" (if you are in a group of 4 people the link is visible to everybody).
+    - Motorcycles/doctors/classes/items that you selected as a theme.
+    - "Reserve" form.
+    - "My reservations".
+    - "Add motorcycle/doctor/class/item that you selected as a theme" (if you are in a group of 4 people the link is visible to everybody).
+    - "Delete motorcycle/doctor/class/item that you selected as a theme" (if you are in a group of 4 people the link is visible to everybody).
 - On the main page, the user can see a list of motorcycles/doctors/classes/items that you selected as a theme.
 - When the user selects a specific item, they can see the details page with its full description (skip the "Rotate image" button).
 - On the details page, the user can click the "Reserve" button (in the design you can see the "Configure" button - please replace it with the "Reserve" button).
@@ -66,7 +66,6 @@ Open [http://localhost:5000](http://localhost:5000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
 
 ## Authors
 
