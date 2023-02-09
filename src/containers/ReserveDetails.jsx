@@ -25,6 +25,6 @@ const ReserveDetails = () => {
       <Reserv />
     </div>
   );
-}
+};
 
 export default ReserveDetails;

@@ -8,6 +8,7 @@ import Signup from '../components/Signup'
 import App from './App'
 import ItemPost from './ItemPost'
 import Properties from './Properties'
+import DeleteItem from '../components/DeleteItem'
 
 const SwitchRoutes = () => {
   return (
@@ -25,6 +26,8 @@ const SwitchRoutes = () => {
         <Route path='/properties' element={<Properties />} />
 
         <Route path='/itempost' element={<ItemPost />} />
+
+        <Route path='/delete' element={<DeleteItem />} />
 
         <Route path='/reserve' element={<ReserveDetails />} />
 

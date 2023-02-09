@@ -21,7 +21,6 @@ import Flogo from './../img/logo.png';
 import { Link } from "react-router-dom";
 
 
-
 function App() {
   return (
     <div>    
@@ -295,6 +294,7 @@ function App() {
             </ul>
           </div>
         </div>  
+         <h5 className="text-dark text-center m-0 p-2"> Copyright © {new Date().getFullYear()} Yink<span className="text-warning">Tech</span> </h5>
       </footer>
 
     </div>

@@ -51,7 +51,7 @@ const Details = () => {
                         </div>
                   
                 </div>
-                <div className=' shadow col-md-5 p-5 p-md-3'>
+                <div className=' shadow col-md-5 mt-5 mt-sm-0 p-sm-5 p-md-3'>
                   <h3 className='fw-bolder text-info text-center'>Make Reservation</h3>
                     <div className='p-o'>
                         <div className='my-3'>
@@ -60,7 +60,7 @@ const Details = () => {
                             Book now and immerse yourself in the comfort and serenity of our fully-furnished house.
                             With spacious rooms, stunning views, and all the amenities you need,
                             this is the perfect escape from the hustle and bustle of daily life.
-                              Don&apos;t miss out on this incredible opportunity to relax and rejuvenate.
+                              Don&apos;tx miss out on this incredible opportunity to relax and rejuvenate.
                               Reserve your stay today!
                           </small>
                         </div>
@@ -68,7 +68,7 @@ const Details = () => {
                     </div>
                 </div>
               </div>
-        )};
+        )}
       </div>
     </div>
   );

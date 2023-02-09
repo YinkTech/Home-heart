@@ -39,7 +39,7 @@ const Login = () => {
           console.log(" Username is not valid ");
           errorMessage('Username is not valid ');
         } else {
-          navigate("/home-heart");
+          navigate("/Home-heart");
           window.location.reload();
         }
       })

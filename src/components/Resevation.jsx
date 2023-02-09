@@ -1,8 +1,13 @@
 import jwtDecode from 'jwt-decode';
 import React, { useState } from 'react';
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 const Resevation = () => {
+  let today = new Date()
+  const date =   today.getFullYear()+ '-' + 0 + parseInt(today.getMonth() + 1) + '-' + 0 + today.getDate()
+  
+
   const title = window.localStorage.getItem("title");
   const jwt = window.localStorage.getItem("jwt");
   const rest = jwtDecode(jwt);
@@ -13,9 +18,19 @@ const Resevation = () => {
   
   const handleStartDate = (e) => setStartDate(e.target.value);
   
+  const errorMessage = (input) => {
+    document.getElementById("error-message").textContent = input;
+  };
+
   const handleFormSubmit = (event) => {
   event.preventDefault();
   const formData = new FormData();
+  if (!startDate || startDate.trim().length === 0) {
+    return errorMessage("Please slect a Date");
+  } else if (startDate === date || startDate < date) {
+    console.log(date)
+    return errorMessage("Can't Pick the Current Date or Past Date");
+  }else {
   formData.append("user", username);
   formData.append("house", property);
   formData.append("start_date", startDate);
@@ -24,20 +39,24 @@ const Resevation = () => {
   method: "POST",
   body: formData,
   })
-  .then((res) => {
-  res.json();
+  .then((res) => {res.json()})
+  .then(() => {
   console.log("added successfully");
+  errorMessage('Reservation Added Successfully');
   navigate("/reserve");
-  })
+  window.location.reload();
+})
   .catch((error) => {
-  console.log('there is an error: ', error.message);
+    console.log('there is an error: ', error.message);
   });
-  };       
+  };
+};
+
   return (
     <div>
-      <div className='container-fluid row'>
-        <h1 className='text-info my-3 text-capitalize'>Make reservation</h1>
+      <div className='row'>
           <div className=''>
+            <div id="error-message"></div>
             <form onSubmit={handleFormSubmit}>
                 <div className="input-group mb-5">
                   <div className="input-group-prepend">

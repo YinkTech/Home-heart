@@ -167,6 +167,18 @@
   width: -webkit-fill-available;
 }
 
+.delete-list {
+  display: flex;
+}
+
+.img-del {
+  width: 100px;
+}
+
+.section-del {
+  width: -webkit-fill-available;
+}
+
 @media screen and (max-width: 770px) {
   .fifth-sec {
     height: 500px;

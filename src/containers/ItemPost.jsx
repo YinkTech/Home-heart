@@ -1,5 +1,5 @@
 import React, {  useState } from 'react';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SignupImg from './../img/addName.jpg';
 
 const ItemPost = () => {
@@ -32,6 +32,8 @@ const ItemPost = () => {
   return (
     <div>
       <div className='border-bottom mb-4'>
+      <Link className='text-decoration-none m-3' style={{color: '#000'}} to={`/properties`}> <i className="bi bi-backspace fs-3"></i></Link> 
+          
       </div>
         <div className=' container-fluid row'>
       <h1 className='text-info my-3'>Add House</h1>
