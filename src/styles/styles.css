@@ -4,21 +4,23 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #3ab1c16a; 
+  background: #3ab1c16a;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3ab1c16a; 
+  background: #3ab1c16a;
 }
 
-.set-color { color: #15295c;}
+.set-color {
+  color: #15295c;
+}
 
 .sliders {
   width: 100%;
@@ -93,7 +95,7 @@
 }
 
 .secIcon {
-  width:50px
+  width: 50px;
 }
 
 .third-sec {
@@ -186,8 +188,8 @@
   }
 
   .companies-logo {
-      height: 50px;
-      margin: 0;
+    height: 50px;
+    margin: 0;
   }
 }
 
@@ -205,5 +207,5 @@
 @media screen and (max-width: 400px) {
   .list-item {
     width: 250px;
-  }  
+  }
 }
