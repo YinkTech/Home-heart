@@ -124,7 +124,6 @@
 }
 
 .list-item {
-  background: #fff;
   width: 350px;
   height: 550px;
   display: inline-flex;
@@ -194,6 +193,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .nav-link {
+    border-bottom: 1px solid #3ab1c1;
+  }
+
   .sliders {
     background: linear-gradient(rgba(0, 213, 255, 0.25), rgba(0, 0, 0, 9.25)), url(./../img/mobile.jpg);
     color: #fff;

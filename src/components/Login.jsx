@@ -1,5 +1,6 @@
 import React, {  useState } from 'react';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import video from './../img/video.mp4'
 
 const Login = () => {
   const navigate = useNavigate();
@@ -51,33 +52,48 @@ const Login = () => {
   };            
               
   return (
-    <div className=' my-5 pt-5 container text-center flex-column'>
-      <h1 className='text-uppercase fw-bolder text-shadow my-5 text-warning'>Login form</h1>
-      
-      <form onSubmit={handleSubmit}>
-        <div id='error-message' className='my-2 '></div>
-        
-        <div className="input-group mb-2">
-          <div className="input-group-prepend">
-            <div className="input-group-text border-warning text-warning auth-btn">@</div>
-          </div>
-          
-          <input
-            type="text"
-            className="form-control border-warning"
-            id="username"
-            name="username"
-            placeholder="Username"
-            onChange={onUsername}
-          />
-        </div>
+    
+    <div className="sig-group">
+    <video autoPlay muted loop id="myVideo">
+      <source src={video} type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
 
-        <input
-          type="submit"
-          className='btn btn-outline-primary m-4 submit-btn'
-          value='Submit'
-        />    
-      </form>
+      <div className='video-content sigin align-self-center text-center7'>
+        <div className="d-flex signup-content-lead text-uppercase">
+          <Link to={`/signup`} className='text-light text-decoration-none mx-3 '> Sign Up</Link>
+          <Link to={`/signin`} className='text-light text-decoration-underline-info ms-3'> Sign In</Link>
+        </div>
+          <form onSubmit={handleSubmit}>
+          <div className='m-2 my-4'>
+              <h3 className='text-break fs-5 text-warning fw-light '>Hey. Enter your details to get sign in <br className='d-none d-md-block' /> to your account.</h3>
+          </div>
+
+          <div id='error-message' className='my-2 '></div>
+          
+            <div className="input-group mb-2">
+                <div className="input-group-prepend">
+                  <div className="input-group-text border-primary text-primary auth-btn">@</div>
+                </div>
+                <input
+                  type="text"
+                  className="form-control border-primary"
+                  id="username"
+                  name="username"
+                  placeholder="Username"
+                  onChange={onUsername}
+                />
+              </div>
+
+              <input
+                type="submit"
+                className='btn btn-info px-4 text-light my-4'
+                value='Sign in'
+              />
+            
+          </form>
+          <small className='text-warning fs-5'> Dont have an account? <Link to={`/signup`} className="text-decoration-none text-info">Join free today</Link> </small>
+      </div>
     </div>
   );
 };

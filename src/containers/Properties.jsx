@@ -8,8 +8,8 @@ const Properties = () => {
   const checked = () => {
     if (isLogedIn === "true") {
       return (
-        <div className='d-flex justify-content-between'> <Link to={`/ItemPost`} className="btn btn-outline-primary">Add new Item</Link>
-              <Link to={`/delete`} className="btn btn-outline-primary"> Delete Item</Link>
+        <div className='d-flex justify-content-between'> <Link to={`/ItemPost`} className="btn btn-outline-info">Add new Item</Link>
+              <Link to={`/delete`} className="btn btn-outline-info"> Delete Item</Link>
         </div>);
     } else if (isLogedIn === "false") {
       return <h5>Login to add Item</h5>;

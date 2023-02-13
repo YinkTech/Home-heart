@@ -34,7 +34,20 @@ const Details = () => {
       </div>
       <div className='container-fluid'>
         {Object.keys(item).length === 0 ? (
-          <div className='text-info mx-5 fs-2 text-uppercase'>loading</div>
+          <div className='text-info mx-5 fs-2 text-uppercase'>
+            <div className="center-item">
+              <div className="wave-itmes-itmes"></div>
+              <div className="wave-itmes"></div>
+              <div className="wave-itmes"></div>
+              <div className="wave-itmes"></div>
+              <div className="wave-itmes"></div>
+              <div className="wave-itmes"></div>
+              <div className="wave-itmes"></div>
+              <div className="wave-itmes"></div>
+              <div className="wave-itmes"></div>
+              <div className="wave-itmes"></div>
+            </div>
+          </div>
             ) : (
               <div className="p-2 align-content-center row justify-content-around">
                 <div className="col-md-6 shadow text-start p-2 rounded-3 detail-list">

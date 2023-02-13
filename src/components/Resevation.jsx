@@ -5,9 +5,8 @@ import { useNavigate } from "react-router-dom";
 
 const Resevation = () => {
   let today = new Date()
-  const date =   today.getFullYear()+ '-' + 0 + parseInt(today.getMonth() + 1) + '-' + 0 + today.getDate()
+  const date =   today.getFullYear()+ '-' + 0 + parseInt(today.getMonth() + 1) + '-' + today.getDate()
   
-
   const title = window.localStorage.getItem("title");
   const jwt = window.localStorage.getItem("jwt");
   const rest = jwtDecode(jwt);
@@ -101,7 +100,7 @@ const Resevation = () => {
  
                 <input
                   type="submit"
-                  className='btn btn-outline-info submit-btn m-5 mt-0'
+                  className='btn btn-outline-info submit-btn  mt-0'
                   value='Submit'
                 />
             </form>

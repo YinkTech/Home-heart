@@ -12,11 +12,45 @@ code {
 }
 
 #error-message {
-  color: #842029;
+  color: #e8e8e8;
   border-color: #f5c2c7;
   padding: 1rem 1rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: 0.25rem;
   transition: opacity 0.15s linear;
+}
+
+.sig-group {
+    display: flex;
+    justify-content: center;
+}
+
+.sigin {
+  background: #67676777;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  text-align: center;
+}
+
+.video-content {
+  text-align: center;
+  position: fixed;
+  top: 30%;
+  padding: 20px;
+  margin: 20px;
+  background: #000000a1;
+  color: #f1f1f1;
+}
+
+.signup-content-lead {
+  margin-bottom: 80px;
 }

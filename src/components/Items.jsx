@@ -12,7 +12,7 @@ const Items = () => {
                   <img src={image} alt="item" className=" img-item img-fluid" />
 
                   <div className="">
-                    <h5 className="my-2 fw-bolder">{title}</h5>
+                    <h5 className="my-2 fw-bolder text-truncate">{title}</h5>
                     
                     <p className="text-secondary text-truncate">{description}</p>
 

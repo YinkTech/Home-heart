@@ -1,9 +1,15 @@
+import jwtDecode from 'jwt-decode';
 import React, {  useState } from 'react';
 import { Link, useNavigate } from "react-router-dom";
 import SignupImg from './../img/addName.jpg';
 
 const ItemPost = () => {
   const navigate = useNavigate();
+  const jwt = window.localStorage.getItem("jwt");
+  const rest = jwtDecode(jwt);
+
+  const [onCurrentUser] = useState(rest.username);
+  
   const [title, settitle] = useState('');
   const [description, setdescription] = useState('');
   const [location, setlocation] = useState('');
@@ -18,6 +24,7 @@ const ItemPost = () => {
           const handleSubmit = event => {
             event.preventDefault();
             var formData = new FormData();
+              formData.append("current_user", onCurrentUser);
               formData.append("title", title);
               formData.append("description", description);
               formData.append("location", location);
@@ -116,7 +123,7 @@ const ItemPost = () => {
  
                 <input
                   type="submit"
-                  className='btn btn-outline-info submit-btn m-5 mt-0'
+                  className='btn btn-outline-info submit-btn '
                   value='Submit'
                 />
               

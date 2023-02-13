@@ -22,6 +22,8 @@ import { Link } from "react-router-dom";
 
 
 function App() {
+  const them = localStorage.getItem('themes');
+
   return (
     <div>    
       <div id="carouselExampleDark" className="carousel d-none d-md-block carousel-light slide" data-bs-ride="carousel">
@@ -103,7 +105,7 @@ function App() {
                 <img src={insur} alt="secIcon" className="secIcon" />
                 <h5 className="fw-bolder">Tax Advantage</h5>
                 <p className="text-secondary">
-                  Residonces can be by and
+                  Residences can be by and
                   they are connected
                   to neighbouring and lan
                   types of housing
@@ -114,7 +116,7 @@ function App() {
                 <img src={property} alt="secIcon" className="secIcon" />
                 <h5 className="fw-bolder">Property Insurance</h5>
                 <p className="text-secondary">
-                  Residonces can be by and
+                  Residences can be by and
                   they are connected
                   to neighbouring and lan
                   types of housing
@@ -125,7 +127,7 @@ function App() {
                 <img src={cash} alt="secIcon" className="secIcon" />
                 <h5 className="fw-bolder"> Low Commission </h5>
                 <p className="text-secondary">
-                  Residonces can be by and
+                  Residences can be by and
                   they are connected
                   to neighbouring and lan
                   types of housing
@@ -136,7 +138,7 @@ function App() {
                 <img src={hricon} alt="secIcon" className="secIcon" />
                 <h5 className="fw-bolder">24 Hrs Service</h5>
                 <p className="text-secondary">
-                  Residonces can be by and
+                  Residences can be by and
                   they are connected
                   to neighbouring and lan
                   types of housing
@@ -150,7 +152,7 @@ function App() {
 
       <div className="third-sec ">
         <div className="container">
-          <div className="d-sm-flex  my-5 justify-content-between">
+          <div className='d-sm-flex  my-5 justify-content-between '>
           <div>
             <h2 className="m-0"> Our Best Collection On Sale</h2>
             <small className="text-secondary fw-bold p-0"> Get your dream place that poppuler now </small>
@@ -161,12 +163,12 @@ function App() {
           </div>
 
           <div className="d-md-flex text-center justify-content-md-between">
-            <div className="shadow text-start p-2 rounded-3 list-item">
+            <div className={`shadow text-start p-2 rounded-3 list-item ${them}`}>
               <img src={item2} alt="item" className=" img-item img-fluid" />
 
               <div className="">
-                <h5 className="my-2 fw-bolder">Chestnut Valley.</h5>
-                <p className="text-secondary">Lorem ipsum doloc sit amet consectetur. Bibendum ipsum orci integer quis neque.</p>
+                <h5 className="my-2 fw-bolder">Lakeside Alley.</h5>
+                <p className="text-secondary text-truncate">Wooden lakeside alley apartment</p>
                 <div className="d-flex justify-content-between">
                   <span className="text-info"> $500 </span>
                   <Link className='list-item-details text-info'>View Details</Link>
@@ -174,25 +176,25 @@ function App() {
               </div>
             </div>
 
-            <div className="shadow text-start p-2 rounded-3 list-item">
+            <div className={` shadow text-start p-2 rounded-3 list-item ${them}`}>
+              <img src={item4} alt="item" className=" img-item img-fluid" />
+
+              <div className="">
+                <h5 className="my-2 fw-bolder"> Block Building.</h5>
+                <p className="text-secondary text-truncate">The Block has eight great West Campus apartment locations near UT Austin with affordable pricing. The Block features modern student housing spaces, professional, on-site maintenance and management and amenities for health, fitness, and socialization – all within your budget.</p>
+                <div className="d-flex justify-content-between">
+                  <span className="text-info"> $500 </span>
+                  <Link className='list-item-details text-info'>View Details</Link>
+                </div>
+              </div>
+            </div>
+
+            <div className={`shadow text-start p-2 rounded-3 list-item  ${them}`}>
               <img src={item3} alt="item" className=" img-item img-fluid" />
 
               <div className="">
                 <h5 className="my-2 fw-bolder">Chestnut Valley.</h5>
-                <p className="text-secondary">Lorem ipsum doloc sit amet consectetur. Bibendum ipsum orci integer quis neque.</p>
-                <div className="d-flex justify-content-between">
-                  <span className="text-info"> $500 </span>
-                  <Link className='list-item-details text-info'>View Details</Link>
-                </div>
-              </div>
-            </div>
-
-            <div className="shadow text-start p-2 rounded-3 list-item">
-              <img src={item4} alt="item" className=" img-item img-fluid" />
-
-              <div className="">
-                <h5 className="my-2 fw-bolder">Chestnut Valley.</h5>
-                <p className="text-secondary">Lorem ipsum doloc sit amet consectetur. Bibendum ipsum orci integer quis neque.</p>
+                <p className="text-secondary text-truncate">After confronting the Paper Macho Goomba, you’ll need to go to Chestnut Valley and rescue Bob-omb. To reach Chestnut Valley, walk over to the middle of the bridge. Then, jump over the side of the bridge and you’ll land in Chestnut Valley.</p>
                 <div className="d-flex justify-content-between">
                   <span className="text-info"> $500 </span>
                   <Link className='list-item-details text-info'>View Details</Link>
@@ -208,10 +210,9 @@ function App() {
         <div className="container text-center">
           <div className=" row mb-5 text-start justify-content-between  align-items-center ">
             <b className="fs-1 fw-bolder col-md-4">3 Easy Steps To Find Your Next Home.</b>
-            <small className="text-secondary col-md-4"> Lorem ipsum dolor sit amet consectetur. 
-              Bibendum adipiscing ipsum orci integer quis neque.</small>
+            <small className="text-secondary col-md-4"> Reservation Made Easy.</small>
             <div className="col-md-3">
-              <button className="btn btn-primary m-2 m-sm-0"> Get Started </button>
+              <Link to={`/properties`} className="btn btn-primary m-2 m-sm-0"> Get Started </Link>
             </div>
           </div>
 
@@ -282,7 +283,7 @@ function App() {
               <li>
                 <div className="input-group mb-4">
                   <input type="text" className="form-control" placeholder="Enter Your Email" aria-label="Enter Your Email" aria-describedby="button-addon2" />
-                  <button className="btn btn-outline-primary" type="button" id="button-addon2">Button</button>
+                  <button className="btn btn-outline-info" type="button" id="button-addon2">Submit</button>
                 </div>
               </li>
               <li className="d-flex justify-content-around">

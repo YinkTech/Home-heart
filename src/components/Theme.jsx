@@ -9,8 +9,10 @@ const Theme = () => {
   const toggleTheme = () => {
     if (themes === 'light') {
       setTheme('dark');
+      window.location.reload();
     } else {
       setTheme('light');
+      window.location.reload();
     };
   };
 
@@ -21,7 +23,7 @@ const Theme = () => {
    
   return (
     <div className={`toggle-mode ${themes}`}>
-      <i onClick={toggleTheme} className='bi bi-lamp-fill'></i>
+      <i onClick={toggleTheme} className='bi bi-brightness-high'></i>
    </div>
   )
 }
