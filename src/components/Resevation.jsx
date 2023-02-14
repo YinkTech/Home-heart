@@ -34,7 +34,7 @@ const Resevation = () => {
   formData.append("house", property);
   formData.append("start_date", startDate);
   
-  fetch("http://localhost:3000/reservations", {
+  fetch("https://home-heart.fly.dev/reservations", {
   method: "POST",
   body: formData,
   })

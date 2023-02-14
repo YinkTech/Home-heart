@@ -20,7 +20,7 @@ const Signup = () => {
             }
             else{
               formData.append("username", username);
-              fetch("http://localhost:3000/users",
+              fetch("https://home-heart.fly.dev/users",
                   {method: 'POST', body: formData})
                   .then(res => res.json())
                   .then(errorMessage('Signup success'))

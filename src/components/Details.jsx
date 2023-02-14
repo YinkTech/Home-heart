@@ -13,7 +13,7 @@ const Details = () => {
   const dispatch = useDispatch();
   const fetchItemDetails = async() => {
     const response = await axios
-    .get(`http://localhost:3000/houses/${itemId}`)
+    .get(`https://home-heart.fly.dev/houses/${itemId}`)
     .catch((err)=> {
       console.log('Err ', err);
     });

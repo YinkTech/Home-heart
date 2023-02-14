@@ -9,13 +9,13 @@ const DeleteItem = () => {
   const current = rest.username;
 
   useEffect(() => {
-    fetch("http://localhost:3000/houses/")
+    fetch("https://home-heart.fly.dev/houses/")
       .then(response => response.json())
       .then(data => setItems(data));
   }, []);
 
   const handleDelete = id => {
-    fetch(`http://localhost:3000/houses/${id}`, {
+    fetch(`https://home-heart.fly.dev/houses/${id}`, {
       method: "DELETE"
     })
       .then(response => response.json())

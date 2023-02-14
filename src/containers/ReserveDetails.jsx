@@ -9,7 +9,7 @@ const ReserveDetails = () => {
 
   const fetchReservation = async() => {
     const response = await axios
-    .get(`http://localhost:3000/reservations`)
+    .get(`https://home-heart.fly.dev/reservations`)
     .catch((err)=> {
       console.log('Err ', err);
     });

@@ -13,7 +13,7 @@ const currentUser = setUser.username;
 
     const renderReserve = reserve.map((resev) => {
           const handleDelete = id => {
-            fetch(`http://localhost:3000/reservations/${id}`, {
+            fetch(`https://home-heart.fly.dev/reservations/${id}`, {
               method: "DELETE"
             })
               .then(response => response.json())

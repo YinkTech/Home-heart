@@ -9,7 +9,7 @@ const ItemList = () => {
 
   const fetchItem = async () => {
     const response = await axios
-    .get(`http://localhost:3000/houses`)
+    .get(`https://home-heart.fly.dev/houses`)
     .catch((err) => {
       console.log('err', err);
     });

@@ -19,7 +19,7 @@ const ItemPost = () => {
   const onDescription = (e) => setdescription(e.target.value);
   const onLocation = (e) => setlocation(e.target.value);
   const onPrice = (e) => setprice(e.target.value);
-  const onImage = (e) => setimage(e.target.value);
+  const onImage = (e) => setimage(e.target.files[0]);
   const errorMessage = useState('');
           const handleSubmit = event => {
             event.preventDefault();
@@ -30,7 +30,7 @@ const ItemPost = () => {
               formData.append("location", location);
               formData.append("price", price);
               formData.append("image", image);
-              fetch("http://localhost:3000/houses",
+              fetch("https://home-heart.fly.dev/houses",
                   {method: 'POST', body: formData})
                   .then(res => (res.json(), console.log('add successfully'), window.location.reload(), navigate("/properties")))
                   .catch(function(error){console.log('there is an error: ', error.message)});
@@ -112,12 +112,13 @@ const ItemPost = () => {
                     <div className="input-group-text auth-btn"><i className="bi bi-file-image"></i></div>
                   </div>
                   <input
-                    type="text"
+                    type="file"
                     className="form-control"
                     id="image"
                     name="image"
                     placeholder="Image"
                     onChange={onImage}
+                    accept="image/*"
                   />
                 </div>
  

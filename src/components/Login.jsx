@@ -20,7 +20,7 @@ const Login = () => {
       return errorMessage("enter username");
     } else {
       formData.append("username", username);
-      fetch("http://localhost:3000/tokens", {
+      fetch("https://home-heart.fly.dev/tokens", {
         method: "POST",
         body: formData,
       })
