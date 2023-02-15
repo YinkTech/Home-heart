@@ -4,7 +4,7 @@
 
 ## Live Demo
 
-[Github](https://yinktech.github.io/Home-heart/)
+[Github](https://yinktech.github.io/)
 ## Home-heart Home Page
 ![screenshot](./src/img/readme/home.png)
 
