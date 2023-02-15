@@ -4,7 +4,8 @@
 
 ## Live Demo
 
-[Github](https://yinktech.github.io/)
+
+- [Netlify](https://home-heart.netlify.app/)
 ## Home-heart Home Page
 ![screenshot](./src/img/readme/home.png)
 
