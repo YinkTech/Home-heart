@@ -22,8 +22,8 @@ code {
 }
 
 .sig-group {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .sigin {
@@ -36,7 +36,7 @@ code {
   position: fixed;
   right: 0;
   bottom: 0;
-  min-width: 100%; 
+  min-width: 100%;
   min-height: 100%;
   text-align: center;
 }
