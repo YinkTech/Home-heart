@@ -106,7 +106,7 @@ function App() {
                 <h5 className="fw-bolder">Tax Advantage</h5>
                 <p className="text-secondary">
                   One of the most common tax advantages is the tax deduction. Tax deductions are expenses that can be subtracted 
-			from an individual's taxable income, reducing the amount of income that is subject to tax. Examples of tax deductions 
+			from an individual&apos;s taxable income, reducing the amount of income that is subject to tax. Examples of tax deductions 
 			include expenses related to business, education, charitable donations, and mortgage interest payments.
                 </p>
               </div>
