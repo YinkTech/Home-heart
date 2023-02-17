@@ -3,10 +3,9 @@
 ## The app consumes an API created using the Ruby on Rails framework. Link to API repo [Home-heart-api](https://github.com/YinkTech/home-heart-api/)
 
 ## Live Demo
-
-
 - [Netlify](https://home-heart.netlify.app/)
---Presentation
+
+## Presentation
 - [Loom Video 1](https://www.loom.com/share/989eda05c91f48d399812f997ffae38e)
 - [Loom Video 2](https://www.loom.com/share/1ac6391d6cea494d8ed616abd2c5b7f2)
 
