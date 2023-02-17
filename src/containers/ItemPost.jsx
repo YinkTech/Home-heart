@@ -20,7 +20,11 @@ const ItemPost = () => {
   const onLocation = (e) => setlocation(e.target.value);
   const onPrice = (e) => setprice(e.target.value);
   const onImage = (e) => setimage(e.target.files[0]);
-  const errorMessage = useState('');
+
+  const errorMessage = (input) => {
+    document.getElementById("error-message").textContent = input;
+  };
+
           const handleSubmit = event => {
             event.preventDefault();
             var formData = new FormData();
@@ -30,9 +34,21 @@ const ItemPost = () => {
               formData.append("location", location);
               formData.append("price", price);
               formData.append("image", image);
+              if (!title || title.trim().length === 0) {
+                return errorMessage('enter a title');
+             } else if (!description || description.trim().length === 0) {
+                return errorMessage('enter a description');
+             } else if (!location || location.trim().length === 0) {
+                return errorMessage('enter a location');
+             } else if (!price || price.trim().length === 0) {
+                return errorMessage('enter a price');
+             }
+              else if (!image) {
+                return errorMessage('Choose an image');
+             }
               fetch("https://home-heart.fly.dev/houses",
                   {method: 'POST', body: formData})
-                  .then(res => (res.json(), console.log('add successfully'), window.location.reload(), navigate("/properties")))
+                  .then(res => (res.json(), console.log('add successfully'), navigate("/properties")))
                   .catch(function(error){console.log('there is an error: ', error.message)});
           }
         
@@ -49,9 +65,10 @@ const ItemPost = () => {
           </div>
           <div className='col-md-5'>
             <form onSubmit={handleSubmit}>
-              {errorMessage}
+              <div id='error-message' className='my-2 text-capitalize'></div>
 
               <div className="input-group mb-5">
+          
                   <div className="input-group-prepend">
                     <div className="input-group-text auth-btn"><i className="bi bi-house-add"></i></div>
                   </div>

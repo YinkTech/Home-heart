@@ -1,5 +1,5 @@
 import jwtDecode from 'jwt-decode';
-import React from 'react'
+import React, { useState } from 'react'
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
@@ -8,17 +8,22 @@ const jwt = window.localStorage.getItem('jwt');
 let setUser = jwtDecode(jwt);
 const currentUser = setUser.username;
 
-  const reserve = useSelector((state) => state.reservationReducer.items);
+const [reserve, setItems] = useState(useSelector((state) => state.reservationReducer.items));
 
 
+// setItems = ;
+
+const handleDelete = id => {
+  fetch(`https://home-heart.fly.dev/reservations/${id}`, {
+    method: "DELETE"
+  })
+  .then(response => response.json())
+  .then(data => {
+    setItems(reserve.filter(resev => resev.id !== id));
+  });
+};
     const renderReserve = reserve.map((resev) => {
-          const handleDelete = id => {
-            fetch(`https://home-heart.fly.dev/reservations/${id}`, {
-              method: "DELETE"
-            })
-              .then(response => response.json())
-              .then(() => window.location.reload());
-          };
+         
       const {id, user, house, start_date} = resev;
       if (currentUser === user) {
       return (

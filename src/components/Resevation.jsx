@@ -25,7 +25,7 @@ const Resevation = () => {
   event.preventDefault();
   const formData = new FormData();
   if (!startDate || startDate.trim().length === 0) {
-    return errorMessage("Please slect a Date");
+    return errorMessage("Please Select a Date");
   } else if (startDate === date || startDate < date) {
     console.log(date)
     return errorMessage("Can't Pick the Current Date or Past Date");
@@ -43,7 +43,6 @@ const Resevation = () => {
   console.log("added successfully");
   errorMessage('Reservation Added Successfully');
   navigate("/reserve");
-  window.location.reload();
 })
   .catch((error) => {
     console.log('there is an error: ', error.message);
