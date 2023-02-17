@@ -6,6 +6,10 @@
 
 
 - [Netlify](https://home-heart.netlify.app/)
+--Presentation
+- [Loom Video 1](https://www.loom.com/share/989eda05c91f48d399812f997ffae38e)
+- [Loom Video 2](https://www.loom.com/share/1ac6391d6cea494d8ed616abd2c5b7f2)
+
 ## Home-heart Home Page
 ![screenshot](./src/img/readme/home.png)
 
