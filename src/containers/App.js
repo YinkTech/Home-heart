@@ -105,9 +105,7 @@ function App() {
                 <img src={insur} alt="secIcon" className="secIcon" />
                 <h5 className="fw-bolder">Tax Advantage</h5>
                 <p className="text-secondary">
-                  One of the most common tax advantages is the tax deduction. Tax deductions are expenses that can be subtracted 
-			from an individual&apos;s taxable income, reducing the amount of income that is subject to tax. Examples of tax deductions 
-			include expenses related to business, education, charitable donations, and mortgage interest payments.
+                  One of the most common tax advantages is the tax deduction.
                 </p>
               </div>
 
@@ -115,9 +113,7 @@ function App() {
                 <img src={property} alt="secIcon" className="secIcon" />
                 <h5 className="fw-bolder">Property Insurance</h5>
                 <p className="text-secondary">
-                  The coverage provided by a property insurance policy typically includes
-			 protection against perils such as fire, theft, vandalism, and natural disasters like hurricanes and 
-			earthquakes. The specific coverage and terms of a property insurance policy can vary depending on the insurer and the policy purchased.
+                  Property insurance includes protection against hazards.
                 </p>
               </div>
             </div>
@@ -125,9 +121,7 @@ function App() {
                 <img src={cash} alt="secIcon" className="secIcon" />
                 <h5 className="fw-bolder"> Low Commission </h5>
                 <p className="text-secondary">
-                  Low commission rates can offer several benefits to investors and traders, including reduced transaction costs, which can help to increase 
-			the overall profitability of a trading strategy. Low commissions can also make it more affordable for individual investors to enter the market 
-			and trade securities or other assets.
+                  Low commission rates can offer several benefits to investors and traders.
                 </p>
               </div>
 
@@ -135,9 +129,7 @@ function App() {
                 <img src={hricon} alt="secIcon" className="secIcon" />
                 <h5 className="fw-bolder">24 Hrs Service</h5>
                 <p className="text-secondary">
-                  Providing 24-hour service can offer several benefits, including convenience and accessibility for customers or clients who may 
-			require assistance outside of regular business hours. It can also help to increase customer satisfaction and loyalty, as it demonstrates 
-			a commitment to meeting the needs of customers or clients at all times.
+                  This service gives customers  benefit to enjoy easy accessibility.
                 </p>
               </div>
               
