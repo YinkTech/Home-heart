@@ -21,7 +21,7 @@ const UsernameDisplay = () => {
   const logout = () => {
     localStorage.removeItem('jwt');
     localStorage.removeItem('isLoggedIn', false);
-    navigate("/signin");
+    navigate("/");
     window.location.reload();
   }
   const checked = () => {
