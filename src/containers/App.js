@@ -143,7 +143,7 @@ function App() {
           <div className='d-sm-flex  my-5 justify-content-between '>
           <div>
             <h2 className="m-0"> Our Best Collection On Sale</h2>
-            <small className="text-secondary fw-bold p-0"> Get your dream place that poppuler now </small>
+            <small className="text-secondary fw-bold p-0"> Get your dream place that popular now </small>
           </div>
           <div>
             <Link to={`/properties`} className="btn btn-outline-info">View All</Link>
@@ -258,7 +258,7 @@ function App() {
             <ul className=" list-unstyled  text-capitalize">
               <li>country delivery</li>
               <li>country beach post</li>
-              <li> www.home-heart.com </li>
+              <li> home-heart.netlify.app </li>
               <li> +234 </li>
             </ul>
           </div>
