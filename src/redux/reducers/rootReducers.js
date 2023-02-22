@@ -1,7 +1,8 @@
-import React from 'react'
+import { combineReducers } from 'redux'
+import { itemReducer, reservationReducer, selectedItemReducer } from './reducers';
 
-export const rootReducers = () => {
-  return (
-    <div>rootReducers</div>
-  )
-}
+export const rootReducers = combineReducers ({
+  itemReducer,
+  reservationReducer,
+  selectedItemReducer,
+});

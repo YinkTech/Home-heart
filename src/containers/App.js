@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "./../components/NavBar";
 import slider1 from './../img/slider-2.jpg';
 import slider2 from './../img/slider-3.jpg';
 import slider3 from './../img/slider-4.jpg';
@@ -23,10 +22,10 @@ import { Link } from "react-router-dom";
 
 
 function App() {
-  return (
-    <div>
-      <NavBar />
+  const them = localStorage.getItem('themes');
 
+  return (
+    <div>    
       <div id="carouselExampleDark" className="carousel d-none d-md-block carousel-light slide" data-bs-ride="carousel">
          
           <div className="carousel-indicators">
@@ -48,7 +47,7 @@ function App() {
               <img src={slider2} className="d-block sliders" alt="slider1" />
               <div className="slider-caption carousel-caption d-none d-md-block">
                 <h5 className="text-warning fs-1">We are provide your dream home.</h5>
-                <p className="text-white">Residential real estate may contain either a single 'amity or multifamily structure that is available for occupation or for non-business available purposes.</p>
+                <p className="text-white">Residential real estate may contain either a single &apos;amity or multifamily structure that is available for occupation or for non-business available purposes.</p>
               </div>
             </div>
 
@@ -56,8 +55,8 @@ function App() {
               <img src={slider3} className="d-block sliders" alt="slider1" />
               
               <div className="slider-caption carousel-caption d-none d-md-block set-color">
-                <h5 className="text-warning fs-1">Third slide label</h5>
-                <p className="text-white">Some representative placeholder content for the third slide.</p>
+                <h5 className="text-warning fs-1">Beautiful investments.</h5>
+                <p className="text-white">Smartest Way To Find Your Home.</p>
               </div>
 
           </div>
@@ -106,10 +105,7 @@ function App() {
                 <img src={insur} alt="secIcon" className="secIcon" />
                 <h5 className="fw-bolder">Tax Advantage</h5>
                 <p className="text-secondary">
-                  Residonces can be by and
-                  they are connected
-                  to neighbouring and lan
-                  types of housing
+                  One of the most common tax advantages is the tax deduction.
                 </p>
               </div>
 
@@ -117,10 +113,7 @@ function App() {
                 <img src={property} alt="secIcon" className="secIcon" />
                 <h5 className="fw-bolder">Property Insurance</h5>
                 <p className="text-secondary">
-                  Residonces can be by and
-                  they are connected
-                  to neighbouring and lan
-                  types of housing
+                  Property insurance includes protection against hazards.
                 </p>
               </div>
             </div>
@@ -128,10 +121,7 @@ function App() {
                 <img src={cash} alt="secIcon" className="secIcon" />
                 <h5 className="fw-bolder"> Low Commission </h5>
                 <p className="text-secondary">
-                  Residonces can be by and
-                  they are connected
-                  to neighbouring and lan
-                  types of housing
+                  Low commission rates can offer several benefits to investors and traders.
                 </p>
               </div>
 
@@ -139,10 +129,7 @@ function App() {
                 <img src={hricon} alt="secIcon" className="secIcon" />
                 <h5 className="fw-bolder">24 Hrs Service</h5>
                 <p className="text-secondary">
-                  Residonces can be by and
-                  they are connected
-                  to neighbouring and lan
-                  types of housing
+                  This service gives customers  benefit to enjoy easy accessibility.
                 </p>
               </div>
               
@@ -153,23 +140,23 @@ function App() {
 
       <div className="third-sec ">
         <div className="container">
-          <div className="d-sm-flex  my-5 justify-content-between">
+          <div className='d-sm-flex  my-5 justify-content-between '>
           <div>
             <h2 className="m-0"> Our Best Collection On Sale</h2>
-            <small className="text-secondary fw-bold p-0"> Get your dream place that poppuler now </small>
+            <small className="text-secondary fw-bold p-0"> Get your dream place that popular now </small>
           </div>
           <div>
-            <button className="btn btn-outline-info">View All</button>
+            <Link to={`/properties`} className="btn btn-outline-info">View All</Link>
           </div>
           </div>
 
           <div className="d-md-flex text-center justify-content-md-between">
-            <div className="shadow text-start p-2 rounded-3 list-item">
+            <div className={`shadow text-start p-2 rounded-3 list-item ${them}`}>
               <img src={item2} alt="item" className=" img-item img-fluid" />
 
               <div className="">
-                <h5 className="my-2 fw-bolder">Chestnut Valley.</h5>
-                <p className="text-secondary">Lorem ipsum doloc sit amet consectetur. Bibendum ipsum orci integer quis neque.</p>
+                <h5 className="my-2 fw-bolder">Lakeside Alley.</h5>
+                <p className="text-secondary text-truncate">Wooden lakeside alley apartment</p>
                 <div className="d-flex justify-content-between">
                   <span className="text-info"> $500 </span>
                   <Link className='list-item-details text-info'>View Details</Link>
@@ -177,25 +164,25 @@ function App() {
               </div>
             </div>
 
-            <div className="shadow text-start p-2 rounded-3 list-item">
+            <div className={` shadow text-start p-2 rounded-3 list-item ${them}`}>
+              <img src={item4} alt="item" className=" img-item img-fluid" />
+
+              <div className="">
+                <h5 className="my-2 fw-bolder"> Block Building.</h5>
+                <p className="text-secondary text-truncate">The Block has eight great West Campus apartment locations near UT Austin with affordable pricing. The Block features modern student housing spaces, professional, on-site maintenance and management and amenities for health, fitness, and socialization – all within your budget.</p>
+                <div className="d-flex justify-content-between">
+                  <span className="text-info"> $500 </span>
+                  <Link className='list-item-details text-info'>View Details</Link>
+                </div>
+              </div>
+            </div>
+
+            <div className={`shadow text-start p-2 rounded-3 list-item  ${them}`}>
               <img src={item3} alt="item" className=" img-item img-fluid" />
 
               <div className="">
                 <h5 className="my-2 fw-bolder">Chestnut Valley.</h5>
-                <p className="text-secondary">Lorem ipsum doloc sit amet consectetur. Bibendum ipsum orci integer quis neque.</p>
-                <div className="d-flex justify-content-between">
-                  <span className="text-info"> $500 </span>
-                  <Link className='list-item-details text-info'>View Details</Link>
-                </div>
-              </div>
-            </div>
-
-            <div className="shadow text-start p-2 rounded-3 list-item">
-              <img src={item4} alt="item" className=" img-item img-fluid" />
-
-              <div className="">
-                <h5 className="my-2 fw-bolder">Chestnut Valley.</h5>
-                <p className="text-secondary">Lorem ipsum doloc sit amet consectetur. Bibendum ipsum orci integer quis neque.</p>
+                <p className="text-secondary text-truncate">After confronting the Paper Macho Goomba, you’ll need to go to Chestnut Valley and rescue Bob-omb. To reach Chestnut Valley, walk over to the middle of the bridge. Then, jump over the side of the bridge and you’ll land in Chestnut Valley.</p>
                 <div className="d-flex justify-content-between">
                   <span className="text-info"> $500 </span>
                   <Link className='list-item-details text-info'>View Details</Link>
@@ -211,10 +198,9 @@ function App() {
         <div className="container text-center">
           <div className=" row mb-5 text-start justify-content-between  align-items-center ">
             <b className="fs-1 fw-bolder col-md-4">3 Easy Steps To Find Your Next Home.</b>
-            <small className="text-secondary col-md-4"> Lorem ipsum dolor sit amet consectetur. 
-              Bibendum adipiscing ipsum orci integer quis neque.</small>
+            <small className="text-secondary col-md-4"> Reservation Made Easy.</small>
             <div className="col-md-3">
-              <button className="btn btn-primary m-2 m-sm-0"> Get Started </button>
+              <Link to={`/properties`} className="btn btn-primary m-2 m-sm-0"> Get Started </Link>
             </div>
           </div>
 
@@ -238,10 +224,10 @@ function App() {
       </div>
 
       <div className="fifth-sec py-sm-4 d-flex flex-md-row flex-column align-content-center justify-content-around">
-        <a href='https://www.dropbox.com/' target='_blank' ><img src={dropbox} alt="companies-logo" className="img-fluid companies-logo" /></a>
-        <a href='https://www.airbnb.com/' target='_blank'><img src={air} alt="companies-logo" className="img-fluid companies-logo" /></a>
-        <a href='https://asana.com/' target='_blank'><img src={asana} alt="companies-logo" className="img-fluid companies-logo" /></a>
-        <a href='https://mailchimp.com/en-gb/' target='_blank'><img src={mailchimp} alt="companies-logo" className="img-fluid companies-logo" /></a>
+        <a href='https://www.dropbox.com/' target='_blank' rel="noreferrer"><img src={dropbox} alt="companies-logo" className="img-fluid companies-logo" /></a>
+        <a href='https://www.airbnb.com/' target='_blank' rel="noreferrer"><img src={air} alt="companies-logo" className="img-fluid companies-logo" /></a>
+        <a href='https://asana.com/' target='_blank' rel="noreferrer"><img src={asana} alt="companies-logo" className="img-fluid companies-logo" /></a>
+        <a href='https://mailchimp.com/en-gb/' target='_blank' rel="noreferrer"><img src={mailchimp} alt="companies-logo" className="img-fluid companies-logo" /></a>
       </div>
 
       <footer className="footer">
@@ -272,7 +258,7 @@ function App() {
             <ul className=" list-unstyled  text-capitalize">
               <li>country delivery</li>
               <li>country beach post</li>
-              <li> www.home-heart.com </li>
+              <li> home-heart.netlify.app </li>
               <li> +234 </li>
             </ul>
           </div>
@@ -283,9 +269,9 @@ function App() {
             <h4>Contact Us</h4>
             <ul className=" list-unstyled  text-capitalize">
               <li>
-                <div class="input-group mb-4">
-                  <input type="text" class="form-control" placeholder="Enter Your Email" aria-label="Enter Your Email" aria-describedby="button-addon2" />
-                  <button class="btn btn-outline-primary" type="button" id="button-addon2">Button</button>
+                <div className="input-group mb-4">
+                  <input type="text" className="form-control" placeholder="Enter Your Email" aria-label="Enter Your Email" aria-describedby="button-addon2" />
+                  <button className="btn btn-outline-info" type="button" id="button-addon2">Submit</button>
                 </div>
               </li>
               <li className="d-flex justify-content-around">
@@ -297,6 +283,7 @@ function App() {
             </ul>
           </div>
         </div>  
+         <h5 className="text-dark text-center m-0 p-2"> Copyright © {new Date().getFullYear()} Yink<span className="text-warning">Tech</span> </h5>
       </footer>
 
     </div>
